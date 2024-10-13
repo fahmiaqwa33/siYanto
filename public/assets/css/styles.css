@@ -1,0 +1,143 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Headings and text */
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom CSS for home section */
+#home {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Gradasi warna hitam dengan transparansi */
+    z-index: 1;
+}
+
+#home img {
+    filter: saturate(40%); /* Mengatur saturasi gambar menjadi 40% */
+}
+
+#home .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Custom button for login */
+.login-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #00eeff; /* Warna hijau cerah */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.login-btn:hover {
+    background-color: #eb0e62; /* Warna merah saat hover */
+}
+
+/* Custom navbar button for login */
+.navbar-login-btn {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #06c9b9; /* Warna hijau pada tombol login di navbar */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar-login-btn:hover {
+    background-color: #eb0e62; /* Warna merah saat hover pada tombol navbar */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 252, 218, 0.7); /* Navbar dengan latar belakang transparan */
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #14171a !important; /* Mengubah warna navbar saat discroll */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #00050a;
+}
+
+/* Button styles */
+.btn-light {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.btn-outline-light {
+    border: 2px solid #f8f9fa;
+    color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+}
